@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ $# -eq 0 ] 
+then
+    echo "Needs argument"
+    exit 1
+fi
+
+
 fileName="${1^}"
 upperCaseName="$(tr '[:lower:]' '[:upper:]' <<< $1)"
 lowerCaseName="$(tr '[:upper:]' '[:lower:]' <<< $1)"
