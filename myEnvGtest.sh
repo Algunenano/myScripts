@@ -74,6 +74,9 @@ include_directories(${GTEST_INCLUDE_DIRS})
 add_executable('$specName' test/'$specName'.cpp)
 target_link_libraries('$specName' '$lowerCaseName' ${GTEST_BOTH_LIBRARIES})' > CMakeLists.txt
 
+echo '## '$fileName > README.md
+
+git init
 cd build/
 cmake ..
 make
