@@ -1,4 +1,5 @@
 #!/bin/bash
+## Creates a folder to hold a basic project with cmake and gtest. Uses the first argument as name for the project and files
 
 if [ $# -eq 0 ] 
 then
