@@ -3,6 +3,7 @@
 function set_fan_speed () {
     let temp=$(printf "%.0f\n" $1)
     liquidctl --legacy-690lc set fan speed $1
+    liquidctl --legacy-690lc set pump speed $1
 }
 
 CHECK_FREQ_SECONDS=3
