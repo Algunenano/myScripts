@@ -7,10 +7,10 @@ function set_fan_speed () {
 }
 
 CHECK_FREQ_SECONDS=3
-MIN_SPEED=30
-MAX_SPEED=100
-MIN_TEMP=25
-MAX_TEMP=65
+MIN_SPEED=20
+MAX_SPEED=95
+MIN_TEMP=40
+MAX_TEMP=66
 
 while [[ true ]];
 do
